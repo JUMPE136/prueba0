@@ -2,92 +2,96 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hot Wheels Fan Page</title>
+  <title>Amazon Clon</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f1f1f1;
       margin: 0;
-      padding: 0;
+      background-color: #EAEDED;
     }
     header {
-      background-color: #ff2c2c;
+      background-color: #131921;
       color: white;
-      text-align: center;
-      padding: 1em 0;
+      padding: 10px 20px;
     }
-    nav {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 10px;
+    header h1 {
+      display: inline;
+      color: #ff9900;
     }
-    nav a {
+    .search-bar {
+      display: inline-block;
+      margin-left: 20px;
+    }
+    .search-bar input {
+      width: 400px;
+      padding: 5px;
+    }
+    .nav-links {
+      float: right;
+    }
+    .nav-links a {
       color: white;
-      margin: 0 15px;
+      margin-left: 20px;
       text-decoration: none;
     }
-    .container {
+    main {
       padding: 20px;
-    }
-    .gallery {
       display: flex;
-      gap: 20px;
       flex-wrap: wrap;
+      gap: 20px;
       justify-content: center;
     }
-    .gallery img {
+    .product {
+      background: white;
+      padding: 15px;
       width: 200px;
-      border-radius: 10px;
-      box-shadow: 2px 2px 10px #aaa;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100%;
+    }
+    .product h3 {
+      font-size: 16px;
+      margin: 10px 0 5px;
+    }
+    .product p {
+      color: green;
+      font-weight: bold;
     }
     footer {
-      background-color: #ff2c2c;
+      background: #232F3E;
       color: white;
       text-align: center;
-      padding: 1em 0;
-      margin-top: 30px;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Hot Wheels Fan Page</h1>
-    <p>¡Bienvenido al mundo de los autos a escala más rápidos!</p>
+    <h1>Amazon</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar productos...">
+    </div>
+    <div class="nav-links">
+      <a href="#">Cuenta</a>
+      <a href="#">Carrito</a>
+    </div>
   </header>
-
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#galeria">Galería</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-
-  <div class="container">
-    <section id="inicio">
-      <h2>¿Qué son los Hot Wheels?</h2>
-      <p>Hot Wheels es una línea de autos a escala coleccionables, producidos por la empresa estadounidense Mattel desde 1968. Estos pequeños autos son famosos por su gran variedad, diseños extremos y pistas espectaculares.</p>
-    </section>
-
-    <section id="galeria">
-      <h2>Galería de Modelos</h2>
-      <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1602535558963-07995b46963d" alt="Hot Wheels 1">
-        <img src="https://images.unsplash.com/photo-1589114470660-3f92f0f003b9" alt="Hot Wheels 2">
-        <img src="https://images.unsplash.com/photo-1578732434969-6d69b2f7f35c" alt="Hot Wheels 3">
-      </div>
-    </section>
-
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p>¿Tienes una colección? ¡Compártela con nosotros! Escríbenos a: <a href="mailto:hotwheelsfans@ejemplo.com">hotwheelsfans@ejemplo.com</a></p>
-    </section>
-  </div>
-
+  <main>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x200?text=Producto" alt="Producto">
+      <h3>Producto Genérico</h3>
+      <p>$99.99</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x200?text=Producto+2" alt="Producto">
+      <h3>Otro Producto</h3>
+      <p>$49.99</p>
+    </div>
+  </main>
   <footer>
-    <p>&copy; 2025 Hot Wheels Fan Page. No oficial.</p>
+    <p>Amazon Clon | Hecho con HTML & CSS</p>
   </footer>
-
 </body>
 </html>
