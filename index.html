@@ -1,12 +1,93 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Mi Primera Web</title>
-    <link rel="stylesheet" href="estilo.css">
-  </head>
-  <body>
-    <h1>¡Hola Mundo!</h1>
-    <p>Web creada 100% desde GitHub</p>
-    <button>Haz clic</button>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hot Wheels Fan Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff2c2c;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+    }
+    nav {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .container {
+      padding: 20px;
+    }
+    .gallery {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px #aaa;
+    }
+    footer {
+      background-color: #ff2c2c;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hot Wheels Fan Page</h1>
+    <p>¡Bienvenido al mundo de los autos a escala más rápidos!</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="container">
+    <section id="inicio">
+      <h2>¿Qué son los Hot Wheels?</h2>
+      <p>Hot Wheels es una línea de autos a escala coleccionables, producidos por la empresa estadounidense Mattel desde 1968. Estos pequeños autos son famosos por su gran variedad, diseños extremos y pistas espectaculares.</p>
+    </section>
+
+    <section id="galeria">
+      <h2>Galería de Modelos</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1602535558963-07995b46963d" alt="Hot Wheels 1">
+        <img src="https://images.unsplash.com/photo-1589114470660-3f92f0f003b9" alt="Hot Wheels 2">
+        <img src="https://images.unsplash.com/photo-1578732434969-6d69b2f7f35c" alt="Hot Wheels 3">
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>¿Tienes una colección? ¡Compártela con nosotros! Escríbenos a: <a href="mailto:hotwheelsfans@ejemplo.com">hotwheelsfans@ejemplo.com</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Hot Wheels Fan Page. No oficial.</p>
+  </footer>
+
+</body>
 </html>
